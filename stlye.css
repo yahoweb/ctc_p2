@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(37, 17, 48);
+    color: rgb(255, 242, 0);
+    text-align: center;
+    padding: 40px
+}
+
+.container {
+    display: flex;
+    align-items: center; /* 세로 정렬 */
+    gap: 30px; /* 사진 글 간격이라고ㅗ오오오오오 */
+}
+
+
+img {
+    width: 50%; 
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* 텍스트 세로 정렬인데 진짜 이젠ㄴ 기억해주라.... */
+.text {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    gap: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+video {
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+/* 📌 마우스를 올리면 비디오가 커지고 테두리가 빛남 */
+video:hover {
+    transform: scale(1.1); /* 10% 확대 */
+    box-shadow: 0 0 20px 5px rgba(123, 117, 17, 0.8); /* 노란 빛나는 효과 */
+}
+paragraphs {
+    display: flex;
+    flex-direction: row; /* 가로 정렬입니다 이거는 이제 알죠??? */
+    gap: 20px; /* 각 문장 간 간인데 이것두 기억해죠 .... */
+    max-width: 80%;
+    justify-content: center;
+}
+
+
+.paragraphs p {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: auto; /* 자동으로 크기해줌 */
+    padding: 10px;
+}
